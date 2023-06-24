@@ -64,21 +64,35 @@
 // while(negativeN <= N - 1);
 
 
-Console.Write("Введите число: ");
-int N = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число: ");
+// int N = Convert.ToInt32(Console.ReadLine());
 
-if (N < 0)
-{
-    N = N * -1;
-}
+// if (N < 0)
+// {
+//     N = N * -1;
+// }
 
-int negativeN = N * (-1);
+// int negativeN = N * (-1);
 
-while(negativeN <= N)
-{
-    Console.Write(negativeN + " ");
-    negativeN++;
-}
+// while(negativeN <= N)
+// {
+//     Console.Write(negativeN + " ");
+//     negativeN++;
+// }
 
 
 //shift alt F - редактирование
+
+
+Console.Write("Введите число: ");
+int n1 = Convert.ToInt32(Console.Readline());
+Console.Write("Ввелите Число 2: ");
+int n2 = Convert.ToInt32(Console.Readline());
+if(n1 > n2)
+{
+Console.Writeline(n1);
+}
+else
+{
+Console.Writeline(n1);
+}
