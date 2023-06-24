@@ -1,0 +1,15 @@
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\bin\Debug\net6.0\less1.exe
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\bin\Debug\net6.0\less1.deps.json
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\bin\Debug\net6.0\less1.runtimeconfig.json
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\bin\Debug\net6.0\less1.dll
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\bin\Debug\net6.0\less1.pdb
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\obj\Debug\net6.0\less1.csproj.AssemblyReference.cache
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\obj\Debug\net6.0\less1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\obj\Debug\net6.0\less1.AssemblyInfoInputs.cache
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\obj\Debug\net6.0\less1.AssemblyInfo.cs
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\obj\Debug\net6.0\less1.csproj.CoreCompileInputs.cache
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\obj\Debug\net6.0\less1.dll
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\obj\Debug\net6.0\refint\less1.dll
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\obj\Debug\net6.0\less1.pdb
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\obj\Debug\net6.0\less1.genruntimeconfig.cache
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\less1\obj\Debug\net6.0\ref\less1.dll
