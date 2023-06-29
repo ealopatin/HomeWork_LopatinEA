@@ -3,6 +3,9 @@
 // 782 -> 8 
 // 918 -> 1
 
+// Console.Write("Введите пожалуйста трехзначное число, а мы покажем его вторую цифру: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"{num} -> {(num % 100)/10}");
 
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
@@ -10,7 +13,22 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
+// Console.Write("Введите пожалуйста число, а мы покажем его третью цифру: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int count = num;
 
+// if (count<100)
+// {
+//     Console.WriteLine($"{num} третьей цифры нет");
+// } 
+// else
+// {
+//     while (count>1000)
+//     {
+//     count = count / 10;
+//     }
+//     Console.WriteLine($"{num} -> {count % 10}");
+// }
 
 
 
@@ -18,3 +36,24 @@
 // 6 -> да 
 // 7 -> да 
 // 1 -> нет
+
+
+
+// Console.Write("Давайте проверим выходной или нет, введите цифры от 1 до 7: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// if (num<1 | num>7)
+// {
+//     Console.Write($"{num} не соответствует дню недели");
+// }
+// else
+// {
+//     if(num>5)
+//     {
+//         Console.Write($"{num}-> Да");
+//     }
+//     else
+//     {
+//         Console.Write($"{num}-> Нет");
+//     }
+// }
