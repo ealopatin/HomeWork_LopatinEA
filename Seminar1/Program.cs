@@ -85,14 +85,14 @@
 
 
 Console.Write("Введите число: ");
-int n1 = Convert.ToInt32(Console.Readline());
+int n1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Ввелите Число 2: ");
-int n2 = Convert.ToInt32(Console.Readline());
+int n2 = Convert.ToInt32(Console.ReadLine());
 if(n1 > n2)
 {
-Console.Writeline(n1);
+Console.WriteLine(n1);
 }
 else
 {
-Console.Writeline(n1);
+Console.WriteLine(n1);
 }
