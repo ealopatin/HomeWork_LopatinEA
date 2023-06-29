@@ -78,53 +78,53 @@
 
 // // Вариант 1 
 
-int lenght = 10; // неободимая длинна массива;
-int index = 0;   // счетчик попыток подбора интересного числа;
-int count = 0;   // количество чисел в массиве;
+// int lenght = 10; // неободимая длинна массива;
+// int index = 0;   // счетчик попыток подбора интересного числа;
+// int count = 0;   // количество чисел в массиве;
 
-int number = 0;
-int sum = 0;
-int multip = 0;
+// int number = 0;
+// int sum = 0;
+// int multip = 0;
 
-Console.Write("[");
+// Console.Write("[");
 
-while (count < lenght)
-{
-      number = new Random().Next(10, 1000);
+// while (count < lenght)
+// {
+//       number = new Random().Next(10, 1000);
 
-    if (number < 100)
-    {
-        multip = (number / 10) * (number % 10);
-        sum = (number / 10) + (number % 10);
-    }
-    else
-    {
-        multip = (number / 100) * ((number / 10) % 10) * (number % 10);
-        sum = (number / 100) + ((number / 10) % 10) + (number % 10);
-    }
+//     if (number < 100)
+//     {
+//         multip = (number / 10) * (number % 10);
+//         sum = (number / 10) + (number % 10);
+//     }
+//     else
+//     {
+//         multip = (number / 100) * ((number / 10) % 10) * (number % 10);
+//         sum = (number / 100) + ((number / 10) % 10) + (number % 10);
+//     }
 
-    if (multip == 0)
-    {
-        index++;
-    }
-    else
-    {   
-        if (multip % sum == 0)
-        {
-            Console.Write($"{number}, ");
-            count++;
-            index++;
-        }
-        else
-        {
-            index++;
-        }
-    }
-}
+//     if (multip == 0)
+//     {
+//         index++;
+//     }
+//     else
+//     {   
+//         if (multip % sum == 0)
+//         {
+//             Console.Write($"{number}, ");
+//             count++;
+//             index++;
+//         }
+//         else
+//         {
+//             index++;
+//         }
+//     }
+// }
 
-Console.Write("]");
+// Console.Write("]");
 
-Console.WriteLine($"   Количество попыток:  {index}");
+// Console.WriteLine($"   Количество попыток:  {index}");
 
 
 
