@@ -63,3 +63,60 @@
 // {
 //     Console.Write(Math.Pow(index, 3) + " ");
 // }
+
+
+
+
+
+
+
+//*******Доп задание
+
+// Вариант 1
+
+// Console.Write("Введите пять символов: ");
+// string stringNumber = Console.ReadLine();
+
+// if (stringNumber[0]==stringNumber[4] && stringNumber[1]==stringNumber[3])
+// {
+//     Console.WriteLine("УРА!");
+// }
+// else
+// {
+//     Console.WriteLine("не ура");
+
+
+
+//Вариант 2 Поиск полиндрома для неограниченного числа символов
+
+// Console.Write("Введите любое количество символов для проверки на полиндром: ");
+// string str = Console.ReadLine();
+// int indexstart = 0;
+// int indexend = str.Length-1;
+// int emergencyStop = 0;
+
+// while (indexstart<indexend)
+// {
+//    if (str[indexstart]==str[indexend])
+//     {
+//         indexstart++;
+//         indexend--;
+//     }
+//     else
+//     {
+//     emergencyStop = 1;
+//     break;
+//     }
+// }
+
+// if (emergencyStop == 1)
+// {
+//     Console.WriteLine($"{str} - Это НЕ полиндром!");
+// }
+// else
+// {
+//     Console.WriteLine($"{str} - Это полиндром!");
+// }
+
+
+
