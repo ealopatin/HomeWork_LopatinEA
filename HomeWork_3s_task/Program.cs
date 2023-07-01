@@ -74,17 +74,17 @@
 
 // Вариант 1
 
-// Console.Write("Введите пять символов: ");
-// string stringNumber = Console.ReadLine();
+Console.Write("Введите пять символов: ");
+string stringNumber = Console.ReadLine();
 
-// if (stringNumber[0]==stringNumber[4] && stringNumber[1]==stringNumber[3])
-// {
-//     Console.WriteLine("УРА!");
-// }
-// else
-// {
-//     Console.WriteLine("не ура");
-
+if (stringNumber[0]==stringNumber[4] && stringNumber[1]==stringNumber[3])
+{
+    Console.WriteLine($"{stringNumber} это полиндром");
+}
+else
+{
+    Console.WriteLine($"{stringNumber} это НЕ полиндром");
+}
 
 
 //Вариант 2 Поиск полиндрома для неограниченного числа символов
