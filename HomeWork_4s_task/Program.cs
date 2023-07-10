@@ -53,34 +53,34 @@
 // 6, 1, 33 -> [6, 1, 33]
 
 
-Console.Write("Выберите способ заполнения массива 1 - Aвтоматически, 2 - Вручную : ");
-int choise = Convert.ToInt32(Console.ReadLine());
-if (choise > 2 | choise < 0)
-{
-    Console.Write("Некорректное значение");
-}
-else if (choise == 1)
-{
-    int size = 8;
-    int[] array = new int[size];
+// Console.Write("Выберите способ заполнения массива 1 - Aвтоматически, 2 - Вручную : ");
+// int choise = Convert.ToInt32(Console.ReadLine());
+// if (choise > 2 | choise < 0)
+// {
+//     Console.Write("Некорректное значение");
+// }
+// else if (choise == 1)
+// {
+//     int size = 8;
+//     int[] array = new int[size];
 
-    for (int i = 0; i < array.Length; i++)
-    {
-        array[i] = new Random().Next(10, 1001);
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(10, 1001);
 
-    }
-    Console.WriteLine($"Массив: [{string.Join(";", array)}]");
-}
-else
-{
-    int size = 8;
-    int[] array = new int[size];
+//     }
+//     Console.WriteLine($"Массив: [{string.Join(";", array)}]");
+// }
+// else
+// {
+//     int size = 8;
+//     int[] array = new int[size];
 
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write($"Введите элемент массива №{i}: ");
-        array[i] = Convert.ToInt32(Console.ReadLine());
-    }
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($"Введите элемент массива №{i}: ");
+//         array[i] = Convert.ToInt32(Console.ReadLine());
+//     }
 
-    Console.WriteLine($"Массив: [{string.Join(";", array)}]");
-}
+//     Console.WriteLine($"Массив: [{string.Join(";", array)}]");
+// }
