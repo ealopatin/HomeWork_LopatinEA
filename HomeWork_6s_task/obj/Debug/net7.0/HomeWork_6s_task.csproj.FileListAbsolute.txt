@@ -1,0 +1,15 @@
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\obj\Debug\net7.0\HomeWork_6s_task.csproj.AssemblyReference.cache
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\obj\Debug\net7.0\HomeWork_6s_task.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\obj\Debug\net7.0\HomeWork_6s_task.AssemblyInfoInputs.cache
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\obj\Debug\net7.0\HomeWork_6s_task.AssemblyInfo.cs
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\obj\Debug\net7.0\HomeWork_6s_task.csproj.CoreCompileInputs.cache
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\bin\Debug\net7.0\HomeWork_6s_task.exe
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\bin\Debug\net7.0\HomeWork_6s_task.deps.json
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\bin\Debug\net7.0\HomeWork_6s_task.runtimeconfig.json
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\bin\Debug\net7.0\HomeWork_6s_task.dll
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\bin\Debug\net7.0\HomeWork_6s_task.pdb
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\obj\Debug\net7.0\HomeWork_6s_task.dll
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\obj\Debug\net7.0\refint\HomeWork_6s_task.dll
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\obj\Debug\net7.0\HomeWork_6s_task.pdb
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\obj\Debug\net7.0\HomeWork_6s_task.genruntimeconfig.cache
+C:\Users\mefes\Dropbox\ПК\Desktop\Обучение GeekBrains\Знакомство с языком программирования\SEMIN\HomeWork_6s_task\obj\Debug\net7.0\ref\HomeWork_6s_task.dll
