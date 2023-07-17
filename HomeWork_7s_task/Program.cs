@@ -177,7 +177,7 @@ void CheckIndexElement(int crowsIndexCheck, int columnsIndexCheck)
         columnsIndex = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine();
 
-        if ((rowsIndex >= 0 && rowsIndex <= rows-1) || (columnsIndex >= 0 && columnsIndex <= columns-1))
+        if ((rowsIndex >= 0 && rowsIndex < rows) && (columnsIndex >= 0 && columnsIndex < columns))
         {
             break;
         }
