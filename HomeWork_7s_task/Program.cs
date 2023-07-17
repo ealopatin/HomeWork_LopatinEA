@@ -50,7 +50,7 @@
 // 1 4 7 2
 // 5 9 2 3
 // 8 4 2 4
-
+// 17 -> такого числа в массиве нет
 
 // Вариант 1. 
 // Проверка без метода
@@ -119,82 +119,82 @@
 // 2 Вариант 
 // Проверка и запрос повторного ввода без завершения программы
 
-Console.Write("Введите колчиество строк: ");
-int rows = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите колчиество строк: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите колчиество столбцов: ");
-int columns = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine();
+// Console.Write("Введите колчиество столбцов: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine();
 
-int minRandom = 0;
-int maxRandom = 10;
-int rowsIndex = 0;
-int columnsIndex = 0;
+// int minRandom = 0;
+// int maxRandom = 10;
+// int rowsIndex = 0;
+// int columnsIndex = 0;
 
-int[,] array2D = GetMatrix(rows, columns, minRandom, maxRandom);
+// int[,] array2D = GetMatrix(rows, columns, minRandom, maxRandom);
 
-PrintMatrix(array2D);
-Console.WriteLine();
+// PrintMatrix(array2D);
+// Console.WriteLine();
 
-CheckIndexElement(rowsIndex,columnsIndex);
-Console.WriteLine($"Число по указанной позиции: {array2D[rowsIndex, columnsIndex]}");
-
-
-int[,] GetMatrix(int m, int n, int min, int max)
-{
-    int[,] matrix = new int[m, n]; //m строки 
-    for (int i = 0; i < matrix.GetLength(0); i++) //m цикл по строкам //GetMAtrix.GetLength(0) сколько строк //GetMAtrix.GetLength(0) сколько сстольбцов
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++) //n цикл по столбцам 
-        {
-            matrix[i, j] = new Random().Next(min, max + 1);
-        }
-    }
-    return matrix;
-}
-
-void PrintMatrix(int[,] matrix)
-{
-
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            Console.Write(matrix[i, j] + "\t");
-        }
-        Console.WriteLine();
-    }
-}
-
-void CheckIndexElement(int crowsIndexCheck, int columnsIndexCheck)
-{
-    while (true)
-    {
-        Console.Write("Введите индекс строки: ");
-        rowsIndex = Convert.ToInt32(Console.ReadLine());
-
-        Console.Write("Введите индекс столбца: ");
-        columnsIndex = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine();
-
-        if ((rowsIndex >= 0 && rowsIndex < rows) && (columnsIndex >= 0 && columnsIndex < columns))
-        {
-            break;
-        }
-        Console.WriteLine("Такого числа в массиве нет.");
-        Console.WriteLine();
-        Console.Write($"Введите корректные значения позиции элемента - не более {rows-1} для строк и не более {columns-1} для столбцов.");
-        Console.WriteLine();
-
-    }
-
-}
+// CheckIndexElement(rowsIndex,columnsIndex);
+// Console.WriteLine($"Число по указанной позиции: {array2D[rowsIndex, columnsIndex]}");
 
 
+// int[,] GetMatrix(int m, int n, int min, int max)
+// {
+//     int[,] matrix = new int[m, n]; //m строки 
+//     for (int i = 0; i < matrix.GetLength(0); i++) //m цикл по строкам //GetMAtrix.GetLength(0) сколько строк //GetMAtrix.GetLength(0) сколько сстольбцов
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++) //n цикл по столбцам 
+//         {
+//             matrix[i, j] = new Random().Next(min, max + 1);
+//         }
+//     }
+//     return matrix;
+// }
+
+// void PrintMatrix(int[,] matrix)
+// {
+
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             Console.Write(matrix[i, j] + "\t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// void CheckIndexElement(int crowsIndexCheck, int columnsIndexCheck)
+// {
+//     while (true)
+//     {
+//         Console.Write("Введите индекс строки: ");
+//         rowsIndex = Convert.ToInt32(Console.ReadLine());
+
+//         Console.Write("Введите индекс столбца: ");
+//         columnsIndex = Convert.ToInt32(Console.ReadLine());
+//         Console.WriteLine();
+
+//         if ((rowsIndex >= 0 && rowsIndex < rows) && (columnsIndex >= 0 && columnsIndex < columns))
+//         {
+//             break;
+//         }
+//         Console.WriteLine("Такого числа в массиве нет.");
+//         Console.WriteLine();
+//         Console.Write($"Введите корректные значения позиции элемента - не более {rows-1} для строк и не более {columns-1} для столбцов.");
+//         Console.WriteLine();
+
+//     }
+
+// }
 
 
 
-// 17 -> такого числа в массиве нет
+
+
+
 // Задача 52: Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 // Например, задан массив:
 // 1 4 7 2
@@ -202,3 +202,138 @@ void CheckIndexElement(int crowsIndexCheck, int columnsIndexCheck)
 // 8 4 2 4
 
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
+
+
+// Вариант 1 
+// Без метода
+
+// Console.WriteLine();
+// Console.Write("Введите колчиество строк: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Введите колчиество столбцов: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine();
+
+// int minRandom = 1;
+// int maxRandom = 10;
+// int[,] array2D = GetMatrix(rows, columns, minRandom, maxRandom);
+
+// Console.WriteLine("Массив:");
+// Console.WriteLine();
+
+// PrintMatrix(array2D);
+// Console.WriteLine();
+
+// double rowsAverage = 0;
+
+// for (int i = 0; i < array2D.GetLength(0); i++)
+// {
+//     for (int j = 0; j < array2D.GetLength(1); j++)
+//     {
+//         rowsAverage = rowsAverage + array2D[i,j];
+//     }
+//     Console.Write($"Строка: {i} - Сумма: {rowsAverage}");
+//     Console.Write($" Среднее арифметическое: {Math.Round(rowsAverage/array2D.GetLength(1),2)}");
+//     Console.WriteLine();
+//     rowsAverage = 0;
+// }
+// Console.WriteLine();
+
+// int[,] GetMatrix(int m, int n, int min, int max)
+// {
+//     int[,] matrix = new int[m, n]; //m строки 
+//     for (int i = 0; i < matrix.GetLength(0); i++) //m цикл по строкам //GetMAtrix.GetLength(0) сколько строк //GetMAtrix.GetLength(0) сколько сстольбцов
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++) //n цикл по столбцам 
+//         {
+//             matrix[i, j] = new Random().Next(min, max + 1);
+//         }
+//     }
+//     return matrix;
+// }
+
+// void PrintMatrix(int[,] matrix)
+// {
+
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             Console.Write(matrix[i, j] + "\t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+
+
+// Вариант 2  с методом
+
+// Console.WriteLine();
+// Console.Write("Введите колчиество строк: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Введите колчиество столбцов: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine();
+
+// int minRandom = 1;
+// int maxRandom = 10;
+// int[,] array2D = GetMatrix(rows, columns, minRandom, maxRandom);
+
+// Console.WriteLine("Массив:");
+// Console.WriteLine();
+
+// PrintMatrix(array2D);
+// Console.WriteLine();
+
+// RowsAverage(array2D);
+
+
+// double[] RowsAverage(int[,] matrix)
+// {
+//     double[] rowsAVG = new double[matrix.GetLength(0)];
+    
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         double rowsSum = 0;
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             rowsSum = rowsSum + matrix[i, j];
+//         }
+//         Console.Write($"Строка: {i} - Сумма: {rowsSum}");
+//         Console.Write($" Среднее арифметическое: {Math.Round(rowsSum / matrix.GetLength(1), 2)}");
+//         Console.WriteLine();
+        
+//     }
+//     return rowsAVG;
+// }
+
+// int[,] GetMatrix(int m, int n, int min, int max)
+// {
+//     int[,] matrix = new int[m, n]; //m строки 
+//     for (int i = 0; i < matrix.GetLength(0); i++) //m цикл по строкам //GetMAtrix.GetLength(0) сколько строк //GetMAtrix.GetLength(0) сколько сстольбцов
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++) //n цикл по столбцам 
+//         {
+//             matrix[i, j] = new Random().Next(min, max + 1);
+//         }
+//     }
+//     return matrix;
+// }
+
+// void PrintMatrix(int[,] matrix)
+// {
+
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             Console.Write(matrix[i, j] + "\t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// Console.WriteLine();
