@@ -7,44 +7,7 @@
 // -1, -7, 567, 89, 223-> 3
 
 
-int MessageToValue(string message)
-{
 
-    Console.Write(message);
-    string value = Console.ReadLine();
-    int result = Convert.ToInt32(value);
-    return result;
-}
-
-int[] InputArray(int length)
-{
-    int[] array = new int[length];
-    for (int i = 0; i < array.Length; i++)
-    {
-        array[i] = MessageToValue($"Введите элемент {i}: ");
-    }
-    return array;
-}
-
-void PrintArray(int[] array)
-{
-    Console.WriteLine();
-    Console.WriteLine($"Массив: [{string.Join("; ", array)}]");
-    Console.WriteLine();
-}
-
-int CountPositiveNumbers(int[] array)
-{
-    int count = 0;
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (array[i] > 0)
-        {
-            count++;
-        }
-    }
-    return count;
-}
 
 // int length = MessageToValue("Введите размер массива: ");
 // int[] array = InputArray(length);
@@ -61,32 +24,32 @@ int CountPositiveNumbers(int[] array)
 // int length = MessageToValue("Введите размер массива: ");
 
 
-int length = 0;
+// int length = 0;
 
-void CheckArraySize0to10(int ckecklength)
-{
-    while (true)
-    {
-        length = MessageToValue("Введите размер массива: ");
-        Console.WriteLine();
-        if (length <= 10 && length > 0)
-        {
-            break;
-        }
-        Console.Write("Введите значение от 1 до 10 ");
-        Console.WriteLine();
+// void CheckArraySize0to10(int ckecklength)
+// {
+//     while (true)
+//     {
+//         length = MessageToValue("Введите размер массива: ");
+//         Console.WriteLine();
+//         if (length <= 10 && length > 0)
+//         {
+//             break;
+//         }
+//         Console.Write("Введите значение от 1 до 10 ");
+//         Console.WriteLine();
 
-    }
-    
-}
+//     }
+
+// }
 
 
-CheckArraySize0to10(length);
+// CheckArraySize0to10(length);
 
-int[] array = InputArray(length);
-PrintArray(array);
-Console.WriteLine($"Количество чисел больше нуля - {CountPositiveNumbers(array)}");
-Console.WriteLine();
+// int[] array = InputArray(length);
+// PrintArray(array);
+// Console.WriteLine($"Количество чисел больше нуля - {CountPositiveNumbers(array)}");
+// Console.WriteLine();
 
 
 // int GetPositivUserNumber(string message, string errorMessage)

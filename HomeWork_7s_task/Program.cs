@@ -54,7 +54,7 @@
 
 // Вариант 1. 
 // Проверка без метода
-
+// ______________________________________________________
 
 // Console.Write("Введите колчиество строк: ");
 // int rows = Convert.ToInt32(Console.ReadLine());
@@ -118,6 +118,7 @@
 
 // 2 Вариант 
 // Проверка и запрос повторного ввода без завершения программы
+// ______________________________________________________
 
 // Console.Write("Введите колчиество строк: ");
 // int rows = Convert.ToInt32(Console.ReadLine());
@@ -204,8 +205,8 @@
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
 
-// Вариант 1 
-// Без метода
+// Вариант 1 Без метода
+// ______________________________________________________
 
 // Console.WriteLine();
 // Console.Write("Введите колчиество строк: ");
@@ -268,7 +269,10 @@
 
 
 
-// Вариант 2  с методом
+
+
+// Вариант 2 черех метод
+// ______________________________________________________
 
 // Console.WriteLine();
 // Console.Write("Введите колчиество строк: ");
@@ -288,26 +292,105 @@
 // PrintMatrix(array2D);
 // Console.WriteLine();
 
+
 // RowsAverage(array2D);
 
-
-// double[] RowsAverage(int[,] matrix)
+// void RowsAverage(int[,] matrix)
 // {
-//     double[] rowsAVG = new double[matrix.GetLength(0)];
-    
-//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     double[] rowsAVG = new double[matrix.GetLength(1)];
+
+//     for (int j = 0; j < matrix.GetLength(1); j++)
 //     {
 //         double rowsSum = 0;
-//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         for (int i = 0; i < matrix.GetLength(0); i++)
 //         {
 //             rowsSum = rowsSum + matrix[i, j];
 //         }
-//         Console.Write($"Строка: {i} - Сумма: {rowsSum}");
-//         Console.Write($" Среднее арифметическое: {Math.Round(rowsSum / matrix.GetLength(1), 2)}");
+//         rowsAVG[j]= Math.Round(rowsSum / matrix.GetLength(0),2);
+//         Console.Write($"Столбца: {j} - Сумма: {rowsSum}");
+//         Console.Write($" Среднее арифметическое: {rowsAVG[j]}");
 //         Console.WriteLine();
-        
+
 //     }
-//     return rowsAVG;
+// }
+
+// int[,] GetMatrix(int m, int n, int min, int max)
+// {
+//     int[,] matrix = new int[m, n]; //m строки 
+//     for (int i = 0; i < matrix.GetLength(0); i++) //m цикл по строкам //GetMAtrix.GetLength(0) сколько строк //GetMAtrix.GetLength(0) сколько сстольбцов
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++) //n цикл по столбцам 
+//         {
+//             matrix[i, j] = new Random().Next(min, max + 1);
+//         }
+//     }
+//     return matrix;
+// }
+
+// void PrintMatrix(int[,] matrix)
+// {
+
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             Console.Write(matrix[i, j] + "\t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// Console.WriteLine();
+
+
+
+// Вариант 3 метов методе
+// ______________________________________________________
+
+// Console.WriteLine();
+// Console.Write("Введите колчиество строк: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Введите колчиество столбцов: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine();
+
+// int minRandom = 1;
+// int maxRandom = 10;
+// int[,] array2D = GetMatrix(rows, columns, minRandom, maxRandom);
+
+// Console.WriteLine("Массив:");
+// Console.WriteLine();
+
+// PrintMatrix(array2D);
+// Console.WriteLine();
+
+
+// RowsAverage(array2D);
+
+
+// void PrintResult(double rowsSum, double[] rowsAVG, int j)
+// {      
+//         Console.Write($"Столбца: {j} - Сумма: {rowsSum}");
+//         Console.Write($" Среднее арифметическое: {rowsAVG[j]}");
+//         Console.WriteLine();
+// }
+
+// void RowsAverage(int[,] matrix)
+// {
+//     double[] rowsAVG = new double[matrix.GetLength(1)];
+
+//     for (int j = 0; j < matrix.GetLength(1); j++)
+//     {
+//         double rowsSum = 0;
+//         for (int i = 0; i < matrix.GetLength(0); i++)
+//         {
+//             rowsSum = rowsSum + matrix[i, j];
+//         }
+//         rowsAVG[j]= Math.Round(rowsSum / matrix.GetLength(0),2);
+//         PrintResult(rowsSum, rowsAVG, j);
+            
+//     }
 // }
 
 // int[,] GetMatrix(int m, int n, int min, int max)
