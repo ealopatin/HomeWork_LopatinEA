@@ -90,29 +90,49 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-void CheckElement(int ckeckElement)
+
+Console.Write("Строку: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+
+Console.Write("Столбец: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+
+if (m > rows || n > columns)
 {
-    while (true)
-    {
-        Console.Write("Строку: ");
-        int m = Convert.ToInt32(Console.ReadLine());
-
-        Console.Write("Столбец: ");
-        int n = Convert.ToInt32(Console.ReadLine());
-        
-        if (m < rows || n < columns)
-        {
-            break;
-        }
-        Console.Write("Введите корректное значение: ");
-
-    }
-
+    Console.Write("Такого числа в массиве нет");
+}
+else
+{
+Console.WriteLine($"Число по указанной позиции: {array2D[m, n]}");
 }
 
-CheckElement(array2D);
 
-Console.WriteLine(array2D[m, n]);
+// Проверка и запрос повторного ввода без запвершения программы
+// void CheckElement(int ckeckElement)
+// {
+//     while (true)
+//     {
+//         Console.Write("Строку: ");
+//         int m = Convert.ToInt32(Console.ReadLine());
+
+//         Console.Write("Столбец: ");
+//         int n = Convert.ToInt32(Console.ReadLine());
+
+//         if (m < rows || n < columns)
+//         {
+//             break;
+//         }
+//         Console.Write("Введите корректное значение: ");
+
+//     }
+
+// }
+
+// CheckElement(array2D);
+
+// Console.WriteLine(array2D[m, n]);
 
 // while
 // if (m > rows || n > columns)

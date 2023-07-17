@@ -73,7 +73,7 @@ void CheckArraySize0to10(int ckecklength)
         {
             break;
         }
-        Console.Write("Введите значение от 0 до 10 ");
+        Console.Write("Введите значение от 1 до 10 ");
         Console.WriteLine();
 
     }
