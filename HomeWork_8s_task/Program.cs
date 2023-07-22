@@ -39,7 +39,7 @@
 //     {
 //         for (int j = 0; j < matrix.GetLength(1); j++)
 //         {
-//             Console.Write(matrix[i, j] + "\t");
+//             Console.Write("{0,3}   ", matrix[i, j]);
 //         }
 //         Console.WriteLine();
 //     }
@@ -112,7 +112,7 @@
 //     {
 //         for (int j = 0; j < matrix.GetLength(1); j++)
 //         {
-//             Console.Write(matrix[i, j] + "\t");
+//             Console.Write("{0,3} ", matrix[i, j]);
 //         }
 //         Console.WriteLine();
 //     }
@@ -132,14 +132,14 @@
 //         for (int j = 0; j < matrix.GetLength(1); j++)
 //         {
 //             rowSum += matrix[i, j];
-//             Console.Write(matrix[i, j] + "\t");
+//             Console.Write("{0,3} ", matrix[i, j]);
 //         }
 //         if (rowSum < minRowSum)
 //         {
 //             minRowSum = rowSum;
 //             minRowIndex = i;
 //         }
-//         Console.Write($"Сумма элементов строки {i+1 }: {rowSum}");
+//         Console.Write($"   Сумма элементов строки {i+1 }: {rowSum}");
 //         Console.WriteLine();
 //     }
 //     Console.WriteLine();
@@ -167,8 +167,8 @@
 
 // TwoMatrixMultiplication(rows,columns, matrixFirst, matrixSecond);
 
-// int[,] matrixMultiplication = TwoMatrixMathMultiplication(rows,columns, matrixFirst, matrixSecond);
-// PrintMatrix(matrixMultiplication);
+// // int[,] matrixMultiplication = TwoMatrixMathMultiplication(rows,columns, matrixFirst, matrixSecond);
+// // PrintMatrix(matrixMultiplication);
 
 // int[,] GetRandomMatrix(int m, int n, int min, int max)
 // {
@@ -191,7 +191,7 @@
 //     {
 //         for (int j = 0; j < matrix.GetLength(1); j++)
 //         {
-//             Console.Write(matrix[i, j] + "\t");
+//             Console.Write("{0,3}   ", matrix[i, j]);
 //         }
 //         Console.WriteLine();
 //     }
@@ -199,7 +199,7 @@
 // }
 
 
-// // Вариант 1 не математический
+// // // Вариант 1 не математический
 
 // int[,] TwoMatrixMultiplication(int m, int n, int[,] matrixFirst, int[,] matrixSecond)
 // {
@@ -210,7 +210,7 @@
 //         for (int j = 0; j < matrix.GetLength(1); j++)
 //         {
 //             matrix[i, j] = matrixFirst[i, j] * matrixSecond[i, j];
-//             Console.Write(matrix[i, j] + "\t");
+//             Console.Write("{0,3}   ", matrix[i, j]);
 //         }
 //         Console.WriteLine();
 //     }
@@ -245,54 +245,24 @@
 //  Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
 
 
-// Console.Write("Введите количество строк: ");
-// int rows = Convert.ToInt32(Console.ReadLine());
 
-// Console.Write("Введите количество столбцов: ");
-// int columns = Convert.ToInt32(Console.ReadLine());
+// int rows = 2;
+// int columns = 2;
+// int depth = 2;
 
-// Console.Write("Введите значение для губины: ");
-// int depth = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"Количество строк: {rows}");
+// Console.WriteLine($"Количество столбцов: {columns}");
+// Console.WriteLine($"Значение глубины: {depth}");
 
 // Console.WriteLine();
 
-// int[,,] matrix = GetRandomMatrix3D(rows, columns, depth, 1, 9);
+// int[,,] matrix = GetRandomMatrix3D(rows, columns, depth, 10, 99);
 
 // PrintMatrix3D(matrix);
-
-
-// int[,] GetRandomMatrix(int m, int n, int min, int max)
-// {
-//     int[,] matrix = new int[m, n];
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//         {
-//             matrix[i, j] = new Random().Next(min, max + 1);
-//         }
-//     }
-//     return matrix;
-// }
-
-// void PrintMatrix(int[,] matrix)
-// {
-//     Console.Write("Массив: ");
-//     Console.WriteLine();
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//         {
-//             Console.Write(matrix[i, j] + "\t");
-//         }
-//         Console.WriteLine();
-//     }
-//     Console.WriteLine();
-// }
 
 // int[,,] GetRandomMatrix3D(int m, int n, int o, int min, int max)
 // {
 //     int[,,] matrix3D = new int[m, n, o];
-
 
 //     for (int i = 0; i < matrix3D.GetLength(0); i++)
 //     {
@@ -300,12 +270,12 @@
 //         {
 //             for (int k = 0; k < matrix3D.GetLength(2); k++)
 //             {
-//                 matrix3D[i, j, k] = new Random().Next(min, max + 1);
-
-//                 if (ArrayCheckNumber(matrix3D, matrix3D[i, j, k]) == true)
+//                 int number = new Random().Next(min, max + 1);
+//                 while (ArrayCheckNumber(matrix3D, number))
 //                 {
-//                     matrix3D[i, j, k] = new Random().Next(min, max + 1);
+//                     number = new Random().Next(min, max + 1);
 //                 }
+//                 matrix3D[i, j, k] = number;
 //             }
 //         }
 //     }
@@ -323,8 +293,8 @@
 //         {
 //             for (int k = 0; k < matrix3D.GetLength(2); k++)
 //             {
-//                 Console.Write($"{matrix3D[i, j, k]} ({i},{j},{k})" + "\t");
-
+//                 Console.Write("{0,3}   ", $"{matrix3D[i, j, k]} ({i},{j},{k})");
+                
 //             }
 //             Console.WriteLine();
 //         }
@@ -333,15 +303,15 @@
 //     Console.WriteLine();
 // }
 
-// bool ArrayCheckNumber(int[,,] arr, int number)
+// bool ArrayCheckNumber(int[,,] array, int number)
 // {
-//     for (int i = 0; i < arr.GetLength(0); i++)
+//     for (int i = 0; i < array.GetLength(0); i++)
 //     {
-//         for (int j = 0; j < arr.GetLength(1); j++)
+//         for (int j = 0; j < array.GetLength(1); j++)
 //         {
-//             for (int k = 0; k < arr.GetLength(2); k++)
+//             for (int k = 0; k < array.GetLength(2); k++)
 //             {
-//                 if (arr[i, j, k] == number)
+//                 if (array[i, j, k] == number)
 //                     return true;
 //             }
 //         }
@@ -352,62 +322,105 @@
 
 
 
-//НЕ раюотает
 
 // Задача 62: Заполните спирально массив 4 на 4.
 
 
-Console.Write("Введите количество строк: ");
-int rows = Convert.ToInt32(Console.ReadLine());
+/* 
 
-Console.Write("Введите количество столбцов: ");
-int columns = Convert.ToInt32(Console.ReadLine());
+Сильно не доработано,
+решение без метода 
+p.s НЕ раюотает с 3 и 6, 4 и 3
+но кое что работает...
 
-Console.WriteLine();
-
-int[,] matrix = GetRandomMatrix(rows, columns, 10, 40);
-
-Spiral(rows, columns, 10, 40);
-
-int[,] GetRandomMatrix(int m, int n, int min, int max)
-{
-    int[,] matrix = new int[m, n];
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            matrix[i, j] = new Random().Next(min, max + 1);
-        }
-    }
-    return matrix;
-}
-
-void PrintMatrix(int[,] matrix)
-{
-    Console.Write("Массив: ");
-    Console.WriteLine();
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            Console.Write(matrix[i, j] + "\t");
-        }
-        Console.WriteLine();
-    }
-    Console.WriteLine();
-}
+*/
 
 
-void Spiral(int m, int n, int min, int max)
-{
-    int[,] matrix = new int[m, n];
-    for (int roundCount = 0; roundCount < matrix.GetLength(0)/2; roundCount++)
-    {
-        for (int j = roundCount; j <= matrix.GetLength(0) - roundCount - 1; j++)
-        {
-            matrix[roundCount, j] = roundCount + j + 1;
-            Console.Write(matrix[roundCount, j] + "\t");
-        }
-    }
+// Console.Write("Введите количество строк: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
 
-}
+// Console.Write("Введите количество столбцов: ");
+// int colums = Convert.ToInt32(Console.ReadLine());
+
+// int[,] spiralArray = new int[colums, rows];
+
+// int[] sortArray = new int[spiralArray.GetLength(0) * spiralArray.GetLength(1) + 1];
+
+// for (int o = 0; o < spiralArray.Length; o++)
+// {
+//     int number = new Random().Next(spiralArray.GetLength(0) * spiralArray.GetLength(1) + 1);
+//     while(ArrayCheckNumber(sortArray,number))
+//     {
+//         number = new Random().Next(spiralArray.GetLength(0) * spiralArray.GetLength(1) + 1);
+//     }
+//     sortArray[o] = number;
+// }
+
+// Array.Sort(sortArray);
+
+// PrintArray(sortArray);
+// Console.WriteLine();
+
+// int k = 1;
+// int t = 0;
+// int i;
+// int j = 0;
+// int n = rows;
+// int m = colums;
+
+// while (k <= n * m)
+// {
+//     for (i = t; i < rows; i++)
+//         spiralArray[j, i] = sortArray[k++];
+//     j = rows - 1;
+
+//     for (i = t + 1; i < colums; i++)
+//         spiralArray[i, j] = sortArray[k++];
+//     j = colums - 1;
+
+//     for (i = rows - 2; i >= t; i--)
+//         spiralArray[j, i] = sortArray[k++];
+//     j = t;
+
+//     for (i = colums - 2; i > t; i--)
+//         spiralArray[i, j] = sortArray[k++];
+
+//     rows--;
+//     colums--;
+//     t++;
+//     j = t;
+// }
+
+// for (i = 0; i < spiralArray.GetLength(0); i++)
+// {
+//     for (j = 0; j < spiralArray.GetLength(1); j++)
+//     {
+//         Console.Write("{0,3} ", spiralArray[i, j]);
+//     }
+//     Console.WriteLine();
+// }
+// Console.WriteLine();
+
+// void PrintArray(int[] array)
+// {
+//     Console.Write("Массив: ");
+//     Console.WriteLine();
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         Console.Write(array[i] + "\t");
+//     }
+//     Console.WriteLine();
+// }
+
+// bool ArrayCheckNumber(int[] array, int number)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         if (array[i] == number)
+//         return true;
+//     }
+//     return false;
+// }
+
+
+
